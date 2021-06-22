@@ -1,4 +1,4 @@
-@RegressionLwm2mPart4 @qatest @prodtest 
+@RegressionLwm2mPart4 @qatest @prodtest  @Part3Part4
 Feature: Motive Bridge DM Regression Cases VZW-Chapter04Cases,Chapter07Cases &Chapter15Cases
 
 @MotiveBridge001
