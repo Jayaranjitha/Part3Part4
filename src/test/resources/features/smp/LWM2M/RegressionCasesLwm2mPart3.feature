@@ -147,5 +147,5 @@ Scenario: Logout from Motive Bridge
       Given user closes the current window 
      Then user switch back to parent window 
     Then user Click on log off for the logged in user
-    Then user closes the simulator in port "5545"
+    Then user closes the simulator in port "5549"
     
