@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.nokia.tef</groupId>
+	<artifactId>test-framework</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>Dx Devops Testing Framework</name>
+	<packaging>jar</packaging>
+	<description>DX Devops Testing Framework</description>
+
+	<properties>
+		<!-- project wide maven versions -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<parallel.tests>1</parallel.tests>
+		<useReqDir>true</useReqDir>
+		<reqType>module,feature</reqType>
+		<tags></tags>
+
+		<!-- serenity related properties -->
+		<webdriver.driver>firefox</webdriver.driver>
+		<serenity.jira.version>1.11.0</serenity.jira.version>
+		<serenity.maven.version>2.0.41</serenity.maven.version>
+		<serenity.cucumber.version>1.0.6</serenity.cucumber.version>
+		<serenity.core.version>2.0.41</serenity.core.version>
+		<spring.data.version>2.5.0.RELEASE-cdh5</spring.data.version>
+		<cucumber.version>4.2.0</cucumber.version>
+		<environment>ana-vlab</environment>
+
+		<!-- SOAP testing libraries -->
+		<soapui.version>5.6.0</soapui.version>
+		<jackson.version>2.9.6</jackson.version>
+		<!-- SMP libraries -->
+		<smp.version>7.0.1.25</smp.version>
+		<!-- Common Utils -->
+		<logging.version>1.2.3</logging.version>
+		<logging.slf4j.version>1.7.25</logging.slf4j.version>
+		<!-- DX Devops libraries version -->
+		<lib.version>1.0.0-SNAPSHOT</lib.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.serenity-bdd</groupId>
+			<artifactId>serenity-core</artifactId>
+			<version>${serenity.core.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.cucumber</groupId>
+					<artifactId>cucumber-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+		</dependency>
+	
+<!-- 	<dependency> -->
+<!-- 			<groupId>com.wdsglobal.cooper.dm.server</groupId> -->
+<!-- 			<artifactId>demo-code</artifactId> -->
+<!-- 		<version>17.10.6.0-20180416085030</version>   -->
+     
+<!-- 		</dependency> -->
+
+<!-- 	<dependency> -->
+<!--     <groupId>com.nokia.colocated.lwm2mserver</groupId> -->
+<!--     <artifactId>lwm2m-client</artifactId> -->
+<!--     <version>19.11.0-20200114182659348</version> -->
+<!-- </dependency> -->
+
+<!-- <dependency>
+    <groupId>com.oracle.ojdbc</groupId>
+    <artifactId>ojdbc10</artifactId>
+    <version>19.3.0.0</version>
+</dependency> -->
+
+   <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.aggregate/jetty-all-server
+<dependency>
+    <groupId>org.eclipse.jetty.aggregate</groupId>
+    <artifactId>jetty-all-server</artifactId>
+    <version>8.2.0.v20160908</version>
+   </dependency> 
+   <  dependency>
+        <groupId>org.monte</groupId>
+        <artifactId>screen-recorder</artifactId>
+        <version>0.7.7</version>
+        </dependency>-->
+      
+      
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.serenity-bdd</groupId>
+			<artifactId>serenity-cucumber4</artifactId>
+			<version>${serenity.cucumber.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>net.serenity-bdd</groupId>
+					<artifactId>serenity-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.cucumber</groupId>
+					<artifactId>cucumber-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>net.serenity-bdd</groupId>
+			<artifactId>serenity-screenplay</artifactId>
+			<version>${serenity.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.serenity-bdd</groupId>
+			<artifactId>serenity-screenplay-webdriver</artifactId>
+			<version>${serenity.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.serenity-bdd</groupId>
+			<artifactId>serenity-spring</artifactId>
+			<version>${serenity.core.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.cucumber</groupId>
+					<artifactId>cucumber-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>		
+		<dependency>
+			<groupId>net.serenity-bdd</groupId>
+			<artifactId>serenity-rest-assured</artifactId>
+			<version>${serenity.core.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.serenity-bdd</groupId>
+					<artifactId>serenity-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.cucumber</groupId>
+					<artifactId>cucumber-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- SOAP UI dependency -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+    
+		<dependency>
+			<groupId>com.smartbear.soapui</groupId>
+			<artifactId>soapui</artifactId>
+			<version>${soapui.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-codec</groupId>
+					<artifactId>commons-codec</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- DX Devops libs -->
+		<dependency>
+			<groupId>motive.smp.ServiceManagementPlatform</groupId>
+			<artifactId>ConfigClient</artifactId>
+			<version>${smp.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-codec</groupId>
+					<artifactId>commons-codec</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.nokia.pups-shared</groupId>
+			<artifactId>ana-common-testing-api-helper</artifactId>
+			<version>${lib.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-codec</groupId>
+					<artifactId>commons-codec</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jersey</groupId>
+					<artifactId>jersey-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jersey</groupId>
+					<artifactId>jersey-server</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jersey</groupId>
+					<artifactId>jersey-json</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jersey</groupId>
+					<artifactId>jersey-servlet</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.nokia.pups-shared</groupId>
+			<artifactId>smp-common-testing-nbi-soap-client</artifactId>
+			<version>${lib.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.smartbear.soapui</groupId>
+					<artifactId>soapui</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-codec</groupId>
+					<artifactId>commons-codec</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.nokia.pups-shared</groupId>
+			<artifactId>smp-nbi-rest-client</artifactId>
+			<version>${lib.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-codec</groupId>
+					<artifactId>commons-codec</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.nokia.pups-shared</groupId>
+			<artifactId>kafka-avro-ingestion</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-codec</groupId>
+					<artifactId>commons-codec</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency> 
+		<!-- logging -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-access</artifactId>
+			<version>${logging.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logging.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>${logging.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${logging.slf4j.version}</version>
+		</dependency>
+		
+	 <dependency>
+    <groupId>mtaf-lib-mdm-devicesimulator</groupId>
+    <artifactId>mtaf-lib-mdm-devicesimulator</artifactId>
+    <version>3.1.1-RELEASE</version>
+   
+    <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>  
+                
+               </exclusions> 
+   </dependency>
+       
+ <dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+<!-- <dependency> -->
+<!-- 			<groupId>com.nokia.ps.mtaf3</groupId> -->
+<!-- 			<artifactId>mtaf-lib-all</artifactId> -->
+<!-- 			<version>3.1.1-RELEASE</version> -->
+			
+<!-- 			<type>pom</type> -->
+<!-- 			<exclusions> -->
+<!-- 				<exclusion> -->
+<!-- 					<groupId>cglib</groupId> -->
+<!-- 					<artifactId>*</artifactId> -->
+<!-- 				</exclusion> -->
+<!-- 				<exclusion> -->
+<!-- 					<groupId>org.seleniumhq.selenium</groupId> -->
+<!-- 					<artifactId>selenium-java</artifactId> -->
+<!-- 				</exclusion> -->
+<!-- 					<exclusion> -->
+<!-- 					<groupId>org.seleniumhq.selenium</groupId> -->
+<!-- 					<artifactId>selenium-java</artifactId> -->
+<!-- 				</exclusion> -->
+				
+<!-- 			</exclusions> -->
+<!-- 		</dependency> -->
+<!-- <dependency> -->
+<!--     <groupId>com.oracle.ojdbc</groupId> -->
+<!--     <artifactId>ojdbc10</artifactId> -->
+<!--     <version>19.3.0.0</version> -->
+<!-- </dependency> -->
+
+      
+	</dependencies>
+
+	<build>
+		<filters>
+			<filter>src/main/filters/filter-${environment}.properties</filter>
+		</filters>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>src/test/resources</directory>
+				<filtering>true</filtering>
+				<excludes>
+					<exclude>**/*.bmp</exclude>
+					<exclude>**/*.jpg</exclude>
+					<exclude>**/*.jpeg</exclude>
+					<exclude>**/serenity.properties</exclude>
+				</excludes>
+			</testResource>
+		</testResources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.22.1</version>
+				<configuration>
+					<includes>
+						<include>${java_include}</include>
+					</includes>
+					<argLine>-Xmx3096m</argLine>
+					<parallel>classes</parallel>
+					<threadCount>${parallel.tests}</threadCount>
+					<forkCount>${parallel.tests}</forkCount>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>process-test-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<filters>
+								<filter>src/main/filters/filter-${environment}.properties</filter>
+							</filters>
+							<overwrite>true</overwrite>
+							<outputDirectory>${basedir}</outputDirectory>
+							<resources>
+								<resource>
+									<directory>src/test/resources</directory>
+									<includes>
+										<include>serenity.properties</include>
+									</includes>
+									<filtering>true</filtering>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>net.serenity-bdd.maven.plugins</groupId>
+				<artifactId>serenity-maven-plugin</artifactId>
+				<version>${serenity.maven.version}</version>
+				<configuration>
+					<tags>${tags}</tags>
+					<reports>email</reports>
+				</configuration>
+				<executions>
+					<execution>
+						<id>serenity-reports</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>aggregate</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>net.serenity-bdd</groupId>
+						<artifactId>serenity-core</artifactId>
+						<version>${serenity.core.version}</version>
+						<exclusions>
+							<exclusion>
+								<groupId>io.cucumber</groupId>
+								<artifactId>cucumber-core</artifactId>
+							</exclusion>
+						</exclusions>
+					</dependency>
+					<dependency>
+						<groupId>net.serenity-bdd</groupId>
+						<artifactId>serenity-emailer</artifactId>
+						<version>${serenity.core.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			
+			<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-enforcer-plugin</artifactId>
+    <version>1.4.1</version>
+    <configuration>
+        <rules><dependencyConvergence/></rules>
+    </configuration>
+</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.0</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>with-jira</id>
+			<properties>
+				<useReqDir>false</useReqDir>
+				<reqType>Epic,Test</reqType>
+			</properties>
+			<dependencies>
+				<dependency>
+					<groupId>net.serenity-bdd</groupId>
+					<artifactId>serenity-jira-requirements-provider</artifactId>
+					<version>${serenity.jira.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>net.serenity-bdd</groupId>
+					<artifactId>serenity-jira-customfield-requirements-provider</artifactId>
+					<version>${serenity.jira.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>net.serenity-bdd</groupId>
+					<artifactId>serenity-jira-plugin</artifactId>
+					<version>${serenity.jira.version}</version>
+				</dependency>
+			</dependencies>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>net.serenity-bdd.maven.plugins</groupId>
+						<artifactId>serenity-maven-plugin</artifactId>
+						<version>${serenity.maven.version}</version>
+						<configuration>
+							<tags>${tags}</tags>
+							<reports>email</reports>
+						</configuration>
+						<executions>
+							<execution>
+								<id>serenity-reports</id>
+								<phase>post-integration-test</phase>
+								<goals>
+									<goal>aggregate</goal>
+								</goals>
+							</execution>
+						</executions>
+						<dependencies>
+							<dependency>
+								<groupId>net.serenity-bdd</groupId>
+								<artifactId>serenity-core</artifactId>
+								<version>${serenity.core.version}</version>
+								<exclusions>
+									<exclusion>
+										<groupId>io.cucumber</groupId>
+										<artifactId>cucumber-core</artifactId>
+									</exclusion>
+								</exclusions>
+							</dependency>
+							<dependency>
+								<groupId>net.serenity-bdd</groupId>
+								<artifactId>serenity-emailer</artifactId>
+								<version>${serenity.core.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>net.serenity-bdd</groupId>
+								<artifactId>serenity-jira-requirements-provider</artifactId>
+								<version>${serenity.jira.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>net.serenity-bdd</groupId>
+								<artifactId>serenity-jira-customfield-requirements-provider</artifactId>
+								<version>${serenity.jira.version}</version>
+							</dependency>
+						</dependencies>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>smp-vlab</id>
+			<properties>
+				<environment>smp-vlab</environment>
+				<java_include>**/*Smp*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>smp-local</id>
+			<properties>
+				<environment>smp-local</environment>
+				<java_include>**/*Smp*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>smp-dev</id>
+			<properties>
+				<environment>smp-dev</environment>
+				<java_include>**/*Smp*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>smp-qa</id>
+			<properties>
+				<environment>smp-qa</environment>
+				<java_include>**/*Smp*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>smp-cert</id>
+			<properties>
+				<environment>smp-cert</environment>
+				<java_include>**/*Smp*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>smp-prod</id>
+			<properties>
+				<environment>smp-prod</environment>
+				<java_include>**/*Smp*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>ana-local</id>
+			<properties>
+				<environment>ana-local</environment>
+				<java_include>**/*Analytics*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>ana-vlab</id>
+			<properties>
+				<environment>ana-vlab</environment>
+				<java_include>**/*Analytics*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>ana-dev</id>
+			<properties>
+				<environment>ana-dev</environment>
+				<java_include>**/*Analytics*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>ana-qa</id>
+			<properties>
+				<environment>ana-qa</environment>
+				<java_include>**/*Analytics*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>ana-cert</id>
+			<properties>
+				<environment>ana-cert</environment>
+				<java_include>**/*Analytics*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+		<profile>
+			<id>ana-prod</id>
+			<properties>
+				<environment>ana-prod</environment>
+				<java_include>**/*Analytics*AcceptanceTests.java</java_include>
+			</properties>
+		</profile>
+	</profiles>
+</project>

@@ -1,0 +1,172 @@
+./AP,,node
+./AP/my.setting.id/NAPDef,NAPId001,
+./AP/my.setting.id/NAPDef/my.setting.id/NAPAddr/NAPAuthInf/my.setting.id/AuthSecr,,
+./AP/my.setting.id/NAPDef/my.setting.id/NAPAddr/NAPAuthInf/my.setting.id/AuthName,,
+./AP/my.setting.id/NAPDef/NAPId001/Name,,
+./AP/my.setting.id/NAPDef/NAPId001/NAPAddr,,
+./AP/my.setting.id/NAPDef/NAPId001/Bearer/BId001/BearerL,WLAN,
+./AP/my.setting.id/NAPDef/NAPId001/NAPAuthInf,,
+./AP/my.setting.id/NAPDef/NAPId001/NAPAuthInf/AUId001/AuthName,,
+./AP/my.setting.id/NAPDef/NAPId001/NAPAuthInf/AUId001/AuthSecr,,
+./AP/my.setting.id1/NAPDef,NAPId002,
+./AP/my.setting.id1/NAPDef/my.setting.id1/NAPAddr,,
+./AP/my.setting.id1/NAPDef/my.setting.id1/NAPAddr/NAPAuthInf/my.setting.id1/AuthName,,
+./AP/my.setting.id1/NAPDef/my.setting.id1/NAPAddr/NAPAuthInf/my.setting.id1/AuthSecr,,
+./AP/my.setting.id1/NAPDef/NAPId002/Name,,
+./AP/my.setting.id1/NAPDef/NAPId002/NAPAddr,,
+./AP/my.setting.id1/NAPDef/NAPId002/Bearer/BId001/BearerL,,
+./AP/my.setting.id1/NAPDef/NAPId002/NAPAuthInf,,
+./AP/my.setting.id1/NAPDef/NAPId002/NAPAuthInf/AUId001/AuthName,,
+./AP/my.setting.id1/NAPDef/NAPId002/NAPAuthInf/AUId001/AuthSecr,,
+./BearerManagementSNAP,0,node
+./BearerManagementSNAP/Internet/Name,Internet,
+./BearerManagementSNAP/Internet/IAPPriorityList,,node
+./ManagedObjects/ConnMO/LTE/APN, , node
+./ManagedObjects/ConnMO/LTE/APN/1, , node
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/Id,1,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/Name, my_other_nap,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/Enabled, true,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/Timer,1800,
+./ManagedObjects/ConnMO/eHRPD/APN, , node
+./ManagedObjects/ConnMO/eHRPD/APN/1, , node
+./ManagedObjects/ConnMO/eHRPD/APN/1/Setting/Id,1,
+./ManagedObjects/ConnMO/eHRPD/APN/1/Setting/Name, my_ehrpd_other_nap,
+./ManagedObjects/ConnMO/eHRPD/APN/1/Setting/Timer,1800,
+./ManagedObjects/ConnMO/LTE/APN/2, , node
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/Id,2,
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/Name, my_other_nap,
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/Enabled, true,
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/Timer,1800,
+./ManagedObjects/ConnMO/eHRPD/APN/2, , node
+./ManagedObjects/ConnMO/eHRPD/APN/2/Setting/Id,2,
+./ManagedObjects/ConnMO/eHRPD/APN/2/Setting/Name, my_ehrpd_other_nap,
+./ManagedObjects/ConnMO/eHRPD/APN/2/Setting/Timer,1800,
+./ManagedObjects/ConnMO/LTE/APN/3, , node
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/Id,3,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/Name, my_other_nap,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/Enabled, true,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/Timer,1800,
+./ManagedObjects/ConnMO/eHRPD/APN/3, , node
+./ManagedObjects/ConnMO/eHRPD/APN/3/Setting/Id,3,
+./ManagedObjects/ConnMO/eHRPD/APN/3/Setting/Name, my_ehrpd_other_nap,
+./ManagedObjects/ConnMO/eHRPD/APN/3/Setting/Timer,1800,
+./ManagedObjects/ConnMO/LTE/APN/4, , node
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/Id,4,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/Name, my_other_nap,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/Enabled, true,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/Timer,1800,
+./ManagedObjects/ConnMO/eHRPD/APN/4, , node
+./ManagedObjects/ConnMO/eHRPD/APN/4/Setting/Id,4,
+./ManagedObjects/ConnMO/eHRPD/APN/4/Setting/Name, my_ehrpd_other_nap,
+./ManagedObjects/ConnMO/eHRPD/APN/4/Setting/Timer,1800,
+./ManagedObjects/ConnMO/LTE/APN/5, , node
+./ManagedObjects/ConnMO/LTE/APN/5/Setting/Id,5,
+./ManagedObjects/ConnMO/LTE/APN/5/Setting/Name, my_other_nap,
+./ManagedObjects/ConnMO/LTE/APN/5/Setting/Enabled, true,
+./ManagedObjects/ConnMO/LTE/APN/5/Setting/Timer," 1800		",
+./ManagedObjects/ConnMO/eHRPD/APN/5, , node
+./ManagedObjects/ConnMO/eHRPD/APN/5/Setting/Id,5,
+./ManagedObjects/ConnMO/eHRPD/APN/5/Setting/Name, my_ehrpd_other_nap,
+./ManagedObjects/ConnMO/eHRPD/APN/5/Setting/Timer,1800,
+./TerminalSecurity/DeviceLock,, node
+./TerminalSecurity/DeviceLock/LockCode,98765,
+./TerminalSecurity/DeviceLock/AutoLockPeriod,10,
+./TerminalSecurity/DeviceLock/MaxAutoLockPeriod,100,
+./TerminalSecurity/DeviceLock/LockLevel,0,
+./Email,IMAP37004,node
+
+
+./Email/IMAP37004/Name,mdmGmail (4),
+./Email/IMAP37004/UAddr,svmmdst@gmail.com,
+./Email/IMAP37004/UID,svmmdst@gmail.com,
+./Email/IMAP37004/Mrcv,imap.gmail.com,
+./Email/IMAP37004/MrcvPort,993,
+./Email/IMAP37004/Msnd,smtp.gmail.com,
+./Email/IMAP37004/MsndPort,465,
+./Email/IMAP37004/SauthUID,,
+./Email/IMAP37004/Mpro,IMAP,
+./Email/IMAP37004/UseSecCon,FALSE,
+./Email/IMAP37004/UseStartTLS,FALSE,
+./Email/IMAP37004/SUseSecCon,FALSE,
+./Email/IMAP37004/SUseStartTLS,FALSE,
+./Email/IMAP37004/ToNapID,AP/my.setting.id,
+./SyncML/DMAcc,
+./SyncML/DMAcc/MDM/Name,
+./SyncML/DMAcc/MDM/Addr,
+./SyncML/DMAcc/MDM/AddrType,
+./SyncML/DMAcc/MDM/PortNbr,
+./SyncML/DMAcc/MDM/ConRef,
+./Vendor/MSFT/Bluetooth,,node
+./Vendor/MSFT/Bluetooth/Disable, true
+
+./Vendor/MSFT/GPS,,node
+./Vendor/MSFT/GPS/Disable,,true
+
+./Com.SonyEricsson/Settings/Browser/PrefConRef,./Com.SonyEricsson/Settings/testApn
+./Com.SonyEricsson/Settings/testApn/NAP,,node
+./Com.SonyEricsson/Settings/testApn/NAP/testApn/BearerType,LTE
+
+./ManagedObjects/DCMO/VOLTE/Operations/HDVoice/Enable,,node
+./ManagedObjects/DCMO/VOLTE/Operations/HDVoice/Disable,,node
+
+./DevDetail/Ext/Network/SignalStrength,35dbPM
+./DevDetail/Ext/LocationCoordinates/Longitude,200
+./DevDetail/Ext/LocationCoordinates/Latitude,100
+./DevDetail/Ext/LocationCoordinates/Altitude,50
+./DevDetail/Ext/Network/Roaming,true
+./DevDetail/Ext/Network/OperatorName,VZE
+./DevDetail/Ext/DateTime/Date,06:25:2013
+./DevDetail/Ext/DateTime/TimeUTC,15:20:00
+
+./DevDetail/Ext/HostDevice,0,node
+./DevDetail/Ext/HostDevice/Manu,
+./DevDetail/Ext/HostDevice/Model,
+./DevDetail/Ext/HostDevice/SwV,
+./DevDetail/Ext/HostDevice/FwV,
+./DevDetail/Ext/HostDevice/HwV,
+./DevDetail/Ext/HostDevice/DateStamp,
+./DevDetail/Ext/HostDevice/DeviceID,
+
+./Memory/DiagMonData/RAMAvail,2600
+./Memory/DiagMonData/StorageIntAvail,2000
+./Memory/DiagMonData/StorageExtAvail,500
+./Memory/DiagMonData/StorageExtTotal,1500
+
+./Battery/DiagMonData/1/BatteryStatus,Healthy
+./Battery/DiagMonData/1/BatteryLevel,100%
+./Battery/DiagMonData/1/BatteryType,Li-ion
+./Battery/DiagMonData/1/BatteryStandbyTime,20
+./Battery/DiagMonData/1/Ext/BatteryTemperature,30
+
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/EAB/Setting/Enabled,True,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/EAB/Setting/Operations/Enable,,node
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/EAB/Setting/Operations/Disable,,node
+
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/LVC/Setting/Enabled,True,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/LVC/Setting/Operations/Enable,,node
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/LVC/Setting/Operations/Disable,,node
+
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VLT/Setting/Enabled,True,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VLT/Setting/Operations/Enable,,node
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VLT/Setting/Operations/Disable,,node
+
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VCE/Setting/Enabled,True,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VCE/Setting/Operations/Enable,,node
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VCE/Setting/Operations/Disable,,node
+
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VWF/Setting/Enabled,True,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VWF/Setting/Operations/Enable,,node
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VWF/Setting/Operations/Disable,,node
+
+./Vendor/Management/RM_Settings/SNMPv3_Trap_Receiver_Add,test
+./Vendor/Management/RM_Settings/SNMPv3_User_Add,test
+./Vendor/Management/Device_Name/Setting,test
+./Vendor/Status/Network/WAN/WAN_IP_Address,10.18.28.38
+./LTE/Vendor/LTE/PDCL/List_Add,
+./LTE/Vendor/LTE/PDCL/Enable,
+./LTE/Vendor/LTE/PDCL/Lock,
+
+./FUMO/FwUpdate/PkgVersion,
+./FUMO/FwUpdate/State,100
+./FUMO/FwUpdate/DownloadAndUpdate/PkgURL,test
+./FUMO/FwUpdate/DownloadAndUpdate,,node

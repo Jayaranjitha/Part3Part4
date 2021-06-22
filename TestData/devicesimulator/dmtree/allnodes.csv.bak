@@ -1,0 +1,432 @@
+./AP,,
+
+./AP/my.setting.id/NAPDef,NAPId001,
+./AP/my.setting.id/NAPDef/my.setting.id/NAPAddr/NAPAuthInf/my.setting.id/AuthSecr,,
+./AP/my.setting.id/NAPDef/my.setting.id/NAPAddr/NAPAuthInf/my.setting.id/AuthName,,
+./AP/my.setting.id/NAPDef/NAPId001/Name,,
+./AP/my.setting.id/NAPDef/NAPId001/NAPAddr,,
+./AP/my.setting.id/NAPDef/NAPId001/Bearer/BId001/BearerL,WLAN,
+./AP/my.setting.id/NAPDef/NAPId001/NAPAuthInf,,
+./AP/my.setting.id/NAPDef/NAPId001/NAPAuthInf/AUId001/AuthName,,
+./AP/my.setting.id/NAPDef/NAPId001/NAPAuthInf/AUId001/AuthSecr,,
+./AP/my.setting.id1/NAPDef,NAPId002,
+./AP/my.setting.id1/NAPDef/my.setting.id1/NAPAddr,,
+./AP/my.setting.id1/NAPDef/my.setting.id1/NAPAddr/NAPAuthInf/my.setting.id1/AuthName,,
+./AP/my.setting.id1/NAPDef/my.setting.id1/NAPAddr/NAPAuthInf/my.setting.id1/AuthSecr,,
+./AP/my.setting.id1/NAPDef/NAPId002/Name,,
+./AP/my.setting.id1/NAPDef/NAPId002/NAPAddr,,
+./AP/my.setting.id1/NAPDef/NAPId002/Bearer/BId001/BearerL,,
+./AP/my.setting.id1/NAPDef/NAPId002/NAPAuthInf,,
+./AP/my.setting.id1/NAPDef/NAPId002/NAPAuthInf/AUId001/AuthName,,
+./AP/my.setting.id1/NAPDef/NAPId002/NAPAuthInf/AUId001/AuthSecr,,
+./BearerManagementSNAP,0,node
+./BearerManagementSNAP/Internet/Name,Internet,
+./BearerManagementSNAP/Internet/IAPPriorityList,,node
+
+./ManagedObjects/FUMO/Ext/Severity, ,
+
+./ManagedObjects/ConnMO/LTE,APN,node
+./ManagedObjects/ConnMO/LTE/APN,6/4/3/2/1,node
+./ManagedObjects/ConnMO/LTE/APN/1,Setting,node
+./ManagedObjects/ConnMO/LTE/APN/1/Setting,set1,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/Enabled,true,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/Id,1,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/Name,ims,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/IP,IpV6,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/Operations,Disable,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/Operations/Disable, ,
+./ManagedObjects/ConnMO/LTE/APN/2,Setting,node
+./ManagedObjects/ConnMO/LTE/APN/2/Setting,set2,
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/Enabled,true
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/Id,2,
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/Name,VZWADMIN,
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/IP,ipV4,
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/Operations,Disable,
+./ManagedObjects/ConnMO/LTE/APN/3,Setting,node
+./ManagedObjects/ConnMO/LTE/APN/3/Setting,set3,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/Enabled,true,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/Id,3,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/Name,VZWINTERNET,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/IP,ipV4,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/Operations,Enable/Disable;Disable/Enable,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/Operations/Enable,200,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/Operations/Disable,200,
+./ManagedObjects/ConnMO/LTE/APN/4,Setting,node
+./ManagedObjects/ConnMO/LTE/APN/4/Setting,set4,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/Enabled,true,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/Id,4,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/Name,VZWaPP,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/IP,IpV6,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/Operations,Enable/Disable;Disable/Enable,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/MAX_CONN_T, ,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/MAX_CONN, ,
+./ManagedObjects/ConnMO/LTE/APN/1/Setting/WAIT_TIME, ,
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/MAX_CONN_T, ,
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/MAX_CONN, ,
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/WAIT_TIME, ,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/MAX_CONN_T, ,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/MAX_CONN, ,
+./ManagedObjects/ConnMO/LTE/APN/3/Setting/WAIT_TIME, ,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/MAX_CONN_T, ,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/MAX_CONN, ,
+./ManagedObjects/ConnMO/LTE/APN/4/Setting/WAIT_TIME, ,
+
+./ManagedObjects/ConnMO/eHRPD,APN,
+./ManagedObjects/ConnMO/eHRPD/APN,1/2/3/4,
+./ManagedObjects/ConnMO/eHRPD/APN/1,Setting,
+./ManagedObjects/ConnMO/eHRPD/APN/1/Setting,set1,
+./ManagedObjects/ConnMO/eHRPD/APN/1/Setting/Enabled,True,
+./ManagedObjects/ConnMO/eHRPD/APN/1/Setting/Id,1,
+./ManagedObjects/ConnMO/eHRPD/APN/1/Setting/Name,vzwimS,
+./ManagedObjects/ConnMO/eHRPD/APN/1/Setting/Operations,disable,
+./ManagedObjects/ConnMO/eHRPD/APN/1/Setting/IP,ipV6,
+./ManagedObjects/ConnMO/eHRPD/APN/1/Setting/Timer,1800,
+./ManagedObjects/ConnMO/eHRPD/APN/2,Setting,node
+./ManagedObjects/ConnMO/eHRPD/APN/2/Setting,set2,
+./ManagedObjects/ConnMO/eHRPD/APN/2/Setting/Enabled,truE,
+./ManagedObjects/ConnMO/eHRPD/APN/2/Setting/Id,2,
+./ManagedObjects/ConnMO/eHRPD/APN/2/Setting/Name,vzwadmiN,
+./ManagedObjects/ConnMO/eHRPD/APN/2/Setting/IP,ipV4,
+./ManagedObjects/ConnMO/eHRPD/APN/2/Setting/Operations,disable,
+./ManagedObjects/ConnMO/eHRPD/APN/2/Setting/Timer,1800,
+./ManagedObjects/ConnMO/eHRPD/APN/3,Setting,node
+./ManagedObjects/ConnMO/eHRPD/APN/3/Setting,set3,
+./ManagedObjects/ConnMO/eHRPD/APN/3/Setting/Enabled,true,
+./ManagedObjects/ConnMO/eHRPD/APN/3/Setting/Id,3,
+./ManagedObjects/ConnMO/eHRPD/APN/3/Setting/Name,vzwinternet,
+./ManagedObjects/ConnMO/eHRPD/APN/3/Setting/IP,ipV4,
+./ManagedObjects/ConnMO/eHRPD/APN/3/Setting/Operations,enable/disable,
+./ManagedObjects/ConnMO/eHRPD/APN/4,Setting,node
+./ManagedObjects/ConnMO/eHRPD/APN/4/Setting,set4,
+./ManagedObjects/ConnMO/eHRPD/APN/4/Setting/Enabled,true,
+./ManagedObjects/ConnMO/eHRPD/APN/4/Setting/Id,4,
+./ManagedObjects/ConnMO/eHRPD/APN/4/Setting/Name,vzwapP,
+./ManagedObjects/ConnMO/eHRPD/APN/4/Setting/IP,ipv4,
+./ManagedObjects/ConnMO/eHRPD/APN/4/Setting/Operations,enable/disable,
+./ManagedObjects/ConnMO/eHRPD/APN/4/Setting/Timer,1800,
+./ManagedObjects/ConnMO/eHRPD/APN/5, ,node
+./ManagedObjects/ConnMO/eHRPD/APN/5/Setting,set4,
+./ManagedObjects/ConnMO/eHRPD/APN/5/Setting/Enabled,en4,
+./ManagedObjects/ConnMO/eHRPD/APN/5/Setting/Id,5,
+./ManagedObjects/ConnMO/eHRPD/APN/5/Setting/Name, my_ehrpd_other_nap,
+./ManagedObjects/ConnMO/eHRPD/APN/5/Setting/IP
+./ManagedObjects/ConnMO/eHRPD/APN/5/Setting/Operations
+./ManagedObjects/ConnMO/eHRPD/APN/5/Setting/Timer,1800,
+
+./ManagedObjects/ConnMO/3GPPLegacy,APN,
+./ManagedObjects/ConnMO/3GPPLegacy/APN,1/2/3/4,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/1,Setting,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/1/Setting,x,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/1/Setting/Enabled,TRUE,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/1/Setting/Id,1,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/1/Setting/Name,VZWIMS,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/1/Setting/IP,IPv4 and IPV6,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/1/Setting/Operations,Disable,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/2,Setting,node
+./ManagedObjects/ConnMO/3GPPLegacy/APN/2/Setting,x,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/2/Setting/Enabled,TRUE,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/2/Setting/Id,2,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/2/Setting/Name,VZWADMIN,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/2/Setting/IP,ipv6,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/2/Setting/Operations,Disable,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/3,Setting,node
+./ManagedObjects/ConnMO/3GPPLegacy/APN/3/Setting,x,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/3/Setting/Enabled,TRUE,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/3/Setting/Id,3,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/3/Setting/Name,VZWINTERNET,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/3/Setting/IP,ipv4,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/3/Setting/Operations,Enable/Disable,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/4,Setting,node
+./ManagedObjects/ConnMO/3GPPLegacy/APN/4/Setting,x,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/4/Setting/Enabled,TRUE,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/4/Setting/Id,4
+./ManagedObjects/ConnMO/3GPPLegacy/APN/4/Setting/Name,VZWAPP,
+./ManagedObjects/ConnMO/3GPPLegacy/APN/4/Setting/IP,ipv4
+./ManagedObjects/ConnMO/3GPPLegacy/APN/4/Setting/Operations,Enable/Disable,
+
+./ManagedObjects/ConnMO/IMS,apn,
+./ManagedObjects/ConnMO/IMS/Setting,ims,
+./ManagedObjects/ConnMO/IMS/Setting/Domain,vzims.com,
+./ManagedObjects/ConnMO/IMS/Setting/SIPT1,3,
+./ManagedObjects/ConnMO/IMS/Setting/SIPTf,30
+./ManagedObjects/ConnMO/IMS/Setting/SIPT2,16
+./ManagedObjects/ConnMO/IMS/Setting/smsformat,3GPP
+./ManagedObjects/ConnMO/IMS/Setting/sms_over_IP_network_indication,false
+./ManagedObjects/ConnMO/LTE/APN/2/Setting/Operations/Disable,false
+
+./TerminalSecurity/DeviceLock,, node
+./TerminalSecurity/DeviceLock/LockCode,98765,
+./TerminalSecurity/DeviceLock/AutoLockPeriod,10,
+./TerminalSecurity/DeviceLock/MaxAutoLockPeriod,100,
+./TerminalSecurity/DeviceLock/LockLevel,0,
+./Email,IMAP37004,node
+./Email/IMAP37004/Name,mdmGmail (4),
+./Email/IMAP37004/UAddr,svmmdst@gmail.com,
+./Email/IMAP37004/UID,svmmdst@gmail.com,
+./Email/IMAP37004/Mrcv,imap.gmail.com,
+./Email/IMAP37004/MrcvPort,993,
+./Email/IMAP37004/Msnd,smtp.gmail.com,
+./Email/IMAP37004/MsndPort,465,
+./Email/IMAP37004/SauthUID,,
+./Email/IMAP37004/Mpro,IMAP,
+./Email/IMAP37004/UseSecCon,FALSE,
+./Email/IMAP37004/UseStartTLS,FALSE,
+./Email/IMAP37004/SUseSecCon,FALSE,
+./Email/IMAP37004/SUseStartTLS,FALSE,
+./Email/IMAP37004/ToNapID,AP/my.setting.id,
+./SyncML/DMAcc,
+./SyncML/DMAcc/MDM/Name,
+./SyncML/DMAcc/MDM/Addr,
+./SyncML/DMAcc/MDM/AddrType,
+./SyncML/DMAcc/MDM/PortNbr,
+./SyncML/DMAcc/MDM/ConRef,
+./Vendor/MSFT/Bluetooth,,node
+./Vendor/MSFT/Bluetooth/Disable, true
+
+./Vendor/MSFT/GPS,,node
+./Vendor/MSFT/GPS/Disable,,true
+
+./Com.SonyEricsson/Settings/Browser/PrefConRef,./Com.SonyEricsson/Settings/testApn
+./Com.SonyEricsson/Settings/testApn/NAP,,node
+./Com.SonyEricsson/Settings/testApn/NAP/testApn/BearerType,LTE
+
+./ManagedObjects/DCMO/VOLTE/Operations/HDVoice/Enable,,node
+./ManagedObjects/DCMO/VOLTE/Operations/HDVoice/Disable,,node
+
+./DevDetail/Ext/Network/SignalStrength,35dbPM
+./DevDetail/Ext/LocationCoordinates/Longitude,200
+./DevDetail/Ext/LocationCoordinates/Latitude,100
+./DevDetail/Ext/LocationCoordinates/Altitude,50
+./DevDetail/Ext/Network/Roaming,true
+./DevDetail/Ext/Network/OperatorName,VZE
+./DevDetail/Ext/DateTime/Date,06:25:2013
+./DevDetail/Ext/DateTime/TimeUTC,15:20:00
+
+./DevDetail/Ext/HostDevice,0,node
+./DevDetail/Ext/HostDevice/Manu,manu,
+./DevDetail/Ext/HostDevice/Model,model,
+./DevDetail/Ext/HostDevice/SwV,swV
+./DevDetail/Ext/HostDevice/FwV,FwV
+./DevDetail/Ext/HostDevice/HwV,HwV
+./DevDetail/Ext/HostDevice/DateStamp,d
+./DevDetail/Ext/HostDevice/DeviceID,did
+
+./Memory/DiagMonData/RAMAvail,2600
+./Memory/DiagMonData/StorageIntAvail,2000
+./Memory/DiagMonData/StorageExtAvail,500
+./Memory/DiagMonData/StorageExtTotal,1500
+
+./Battery/DiagMonData/1/BatteryStatus,Healthy
+./Battery/DiagMonData/1/BatteryLevel,100%
+./Battery/DiagMonData/1/BatteryType,Li-ion
+./Battery/DiagMonData/1/BatteryStandbyTime,20
+./Battery/DiagMonData/1/Ext/BatteryTemperature,30
+
+./ManagedObjects/DCMO/VOLTE/Operations/HDVoice/Enable,,node
+./ManagedObjects/DCMO/VOLTE/Operations/HDVoice/Disable,,node
+./ManagedObjects/DCMO/VOLTE/Operations/LVC/Enable,,node
+./ManagedObjects/DCMO/VOLTE/Operations/LVC/Disable,,node
+./ManagedObjects/DCMO/VOLTE/Operations/EAB/Enable,,node
+./ManagedObjects/DCMO/VOLTE/Operations/EAB/Disable,,node
+
+./ManagedObjects/DCMO/VOLTE,,node
+./ManagedObjects/DCMO/VOLTE/Timer_VZW, ,
+./ManagedObjects/DCMO/VOLTE/TDelay, ,
+./ManagedObjects/DCMO/VOLTE/SILENT_REDIAL_ENABLE, ,
+./ManagedObjects/DCMO/VOLTE/VocoderMode,,node
+./ManagedObjects/DCMO/VOLTE/VocoderMode/AMRMODESET,7,
+./ManagedObjects/DCMO/VOLTE/VocoderMode/AMRWBMODESET,2,
+./ManagedObjects/DCMO/VOLTE/Publish_Timer, ,
+./ManagedObjects/DCMO/VOLTE/Publish_Timer_Extended, ,
+./ManagedObjects/DCMO/VOLTE/Capabilities_Cache_Expiration, ,
+./ManagedObjects/DCMO/VOLTE/Availability_Cache_Expiration, ,
+./ManagedObjects/DCMO/VOLTE/Capabilities_Poll_Interval, ,
+./ManagedObjects/DCMO/VOLTE/Source_Throttle_Publish, ,
+./ManagedObjects/DCMO/VOLTE/Max_NumEntries_in_RCL, ,
+./ManagedObjects/DCMO/VOLTE/Capab_Poll_list_Sub_Exp, ,
+./ManagedObjects/DCMO/VOLTE/GZIP_Flag, ,
+./ManagedObjects/DCMO/VOLTE/SIP_Session_Timer,300,
+./ManagedObjects/DCMO/VOLTE/Min_SE,300,
+./ManagedObjects/DCMO/VOLTE/TVOLTE_HYS, ,
+./ManagedObjects/DCMO/VOLTE/TLTE_911Fail, ,
+./ManagedObjects/DCMO/VOLTE/TPLMN_BARRING,900,
+./ManagedObjects/DCMO/VOLTE/TIMS_ESTABLISHMENT,120,
+
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VLT/Setting/Enabled,true,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VLT/Setting/Operations,true,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/EAB/Setting/Enabled,true,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/EAB/Setting/Operations,true,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/LVC/Setting/Enabled,true,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/LVC/Setting/Operations,true,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VCE/Setting/Enabled,true,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VWF/Setting/Enabled,true,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VCE/Setting/Operations,true,
+./ManagedObjects/DCMO/VOLTE/FeatureStatus/VWF/Setting/Operations,true,
+
+
+
+./DMAcc/AppAddr/Addr, ,
+./DMAcc/AppAddr/AddrType, ,
+./DMAcc/AppAddr/Port, ,
+
+./DMAcc/AppAddr/Port,443
+./DMAcc/AppAddr/AddrType,URI
+./DMAcc/AppAddr/Addr,https://ivzwmdmiv.iot.motive.com
+
+./DMAcc, ,
+./DMAcc/AppID, ,
+./DMAcc/ServerID, ,
+./DMAcc/Name, ,
+./DMAcc/AppAddr, ,
+./DMAcc/AppAddr/Addr, ,
+./DMAcc/AppAddr/AddrType, ,
+./DMAcc/AppAddr/Port, ,
+./DMAcc/AAuthPref, ,
+./DMAcc/AppAuth, ,
+./DMAcc/AppAuth/Client, ,
+./DMAcc/AppAuth/Client/AAuthLevel, ,
+./DMAcc/AppAuth/Client/AAuthLevel, ,
+./DMAcc/AppAuth/Client/AAuthType, ,
+./DMAcc/AppAuth/Client/AAuthName, ,
+./DMAcc/AppAuth/Server, ,
+./DMAcc/AppAuth/Server/AAuthLevel, ,
+./DMAcc/AppAuth/Server/AAuthType, ,
+./DMAcc/AppAuth/Server/AAuthName, ,
+
+./ManagedObjects/ConnMO/VZW800/APN/5/Setting/IP, ,
+./ManagedObjects/ConnMO/VZW800/APN/5/Setting/Name, ,
+
+./DCMO/VOLTE/FeatureStatus/VLT/Setting/Operations/Disable,,node
+./DCMO/VOLTE/FeatureStatus/LVC/Setting/Operations/Disable,,node
+./DCMO/VOLTE/FeatureStatus/EAB/Setting/Operations/Disable,,node
+./DCMO/VOLTE/FeatureStatus/EAB/Setting/Operations/Enable,,node
+./DCMO/VOLTE/FeatureStatus/VLT/Setting/Operations/Enable,,node
+./DCMO/VOLTE/FeatureStatus/LVC/Setting/Operations/Enable,,node
+
+./ManagedObjects/DiagMon,,
+./ManagedObjects/DiagMon/RF,,
+./ManagedObjects/DiagMon/RF/CurrentSystem,,
+./ManagedObjects/DiagMon/RF/CurrentSystem/Data,wIfI,
+./ManagedObjects/DiagMon/RF/CurrentSystem/Voice,,
+./ManagedObjects/DiagMon/RF/HomeRoam,,
+./ManagedObjects/DiagMon/VOLTE/FeatureStatus/VLT/Setting/Enabled,trUe,
+./ManagedObjects/DiagMon/VOLTE/FeatureStatus/LVC/Setting/Enabled,trUe,
+
+./ManagedObjects/DiagMon/ApplicationInfo, ,node
+./ManagedObjects/DiagMon/ApplicationInfo/1/AppName,GoogleMap
+./ManagedObjects/DiagMon/ApplicationInfo/1/PkgName,GoogleMapPkg
+./ManagedObjects/DiagMon/ApplicationInfo/1/VersionName,1.1.0
+./ManagedObjects/DiagMon/ApplicationInfo/1/VersionCode,V2ero
+./ManagedObjects/DiagMon/ApplicationInfo/1/LastUpdateTime,06:25:2013 15:20
+./ManagedObjects/DiagMon/ApplicationInfo/1/PreInstalled,true
+./ManagedObjects/DiagMon/ApplicationInfo/2/AppName,YahooWeather
+./ManagedObjects/DiagMon/ApplicationInfo/2/VersionName,1.1
+./ManagedObjects/DiagMon/ApplicationInfo/2/VersionCode,V1Yo
+./ManagedObjects/DiagMon/ApplicationInfo/2/LastUpdateTime,06:25:2013 15:20
+./ManagedObjects/DiagMon/ApplicationInfo/2/PreInstalled,false
+
+./ManagedObjects/DiagMon/ProcessInfo,,node
+./ManagedObjects/DiagMon/ProcessInfo/1/ProcessName,Email
+./ManagedObjects/DiagMon/ProcessInfo/1/PID,12
+./ManagedObjects/DiagMon/ProcessInfo/1/PPID,1234
+./ManagedObjects/DiagMon/ProcessInfo/1/VSS,none
+./ManagedObjects/DiagMon/ProcessInfo/1/RSS,none
+./ManagedObjects/DiagMon/ProcessInfo/1/Importance,none
+./ManagedObjects/DiagMon/ProcessInfo/1/NumOfThreads,2
+./ManagedObjects/DiagMon/ProcessInfo/1/State,running
+./ManagedObjects/DiagMon/ProcessInfo/1/UID,2
+
+./ManagedObjects/DiagMon/ProcessInfo/2/ProcessName,Email2
+./ManagedObjects/DiagMon/ProcessInfo/2/PID,122
+./ManagedObjects/DiagMon/ProcessInfo/2/PPID,12342
+./ManagedObjects/DiagMon/ProcessInfo/2/CPUUtilization,20
+./ManagedObjects/DiagMon/ProcessInfo/2/VSS,none
+./ManagedObjects/DiagMon/ProcessInfo/2/RSS,none
+./ManagedObjects/DiagMon/ProcessInfo/2/Importance,none
+./ManagedObjects/DiagMon/ProcessInfo/2/NumOfThreads,3
+./ManagedObjects/DiagMon/ProcessInfo/2/State,running
+./ManagedObjects/DiagMon/ProcessInfo/2/UID,2
+
+./ManagedObjects/DiagMon/ProcessInfo/3/ProcessName,Email3
+./ManagedObjects/DiagMon/ProcessInfo/3/PID,133
+./ManagedObjects/DiagMon/ProcessInfo/3/PPID,13343
+./ManagedObjects/DiagMon/ProcessInfo/3/CPUUtilization,30
+./ManagedObjects/DiagMon/ProcessInfo/3/VSS,none
+./ManagedObjects/DiagMon/ProcessInfo/3/RSS,none
+./ManagedObjects/DiagMon/ProcessInfo/3/Importance,none
+./ManagedObjects/DiagMon/ProcessInfo/3/NumOfThreads,3
+./ManagedObjects/DiagMon/ProcessInfo/3/State,running
+./ManagedObjects/DiagMon/ProcessInfo/3/UID,3
+
+./ManagedObjects/DiagMon/ProcessInfo/4/ProcessName,Email4
+./ManagedObjects/DiagMon/ProcessInfo/4/PID,144
+./ManagedObjects/DiagMon/ProcessInfo/4/PPID,14444
+./ManagedObjects/DiagMon/ProcessInfo/4/CPUUtilization,40
+./ManagedObjects/DiagMon/ProcessInfo/4/VSS,none
+./ManagedObjects/DiagMon/ProcessInfo/4/RSS,none
+./ManagedObjects/DiagMon/ProcessInfo/4/Importance,none
+./ManagedObjects/DiagMon/ProcessInfo/4/NumOfThreads,4
+./ManagedObjects/DiagMon/ProcessInfo/4/State,running
+./ManagedObjects/DiagMon/ProcessInfo/4/UID,4
+
+./ManagedObjects/DiagMon/BatteryInfo,,node
+./ManagedObjects/DiagMon/BatteryInfo/1/BatteryTemp,20F
+./ManagedObjects/DiagMon/BatteryInfo/1/BatteryLevel,30%
+./ManagedObjects/DiagMon/BatteryInfo/1/BatteryStatus,Charged
+./ManagedObjects/DiagMon/BatteryInfo/1/BatteryType,none
+./ManagedObjects/DiagMon/BatteryInfo/1/BatteryVoltage,110v
+./ManagedObjects/DiagMon/BatteryInfo/2/BatteryTemp,20F
+./ManagedObjects/DiagMon/BatteryInfo/2/BatteryLevel,30%
+./ManagedObjects/DiagMon/BatteryInfo/2/BatteryStatus,Charged
+./ManagedObjects/DiagMon/BatteryInfo/2/BatteryType,none
+./ManagedObjects/DiagMon/BatteryInfo/2/BatteryVoltage,110v
+
+./ManagedObjects/DiagMon/MemoryInfo,,node
+./ManagedObjects/DiagMon/MemoryInfo/RAMAvail,20MB
+./ManagedObjects/DiagMon/MemoryInfo/RAMPercentFree,50%
+./ManagedObjects/DiagMon/MemoryInfo/RAMTotal,80MB
+./ManagedObjects/DiagMon/MemoryInfo/StorageIntAvail,32GB
+./ManagedObjects/DiagMon/MemoryInfo/StoragePercentFree,60%
+./ManagedObjects/DiagMon/MemoryInfo/StorageIntTotal,10GB
+
+./ManagedObjects/DiagMon/WiFiInfo,,node
+./ManagedObjects/DiagMon/WiFiInfo/Enabled,true
+./ManagedObjects/DiagMon/WiFiInfo/Speed,12mbps
+./ManagedObjects/DiagMon/WiFiInfo/Scanning,none
+./ManagedObjects/DiagMon/WiFiInfo/Signal,good
+./ManagedObjects/DiagMon/WiFiInfo/SSID,123456
+./ManagedObjects/DiagMon/WiFiInfo/Hotspot,none
+./ManagedObjects/DiagMon/WiFiInfo/MAC,AB:DD:CC
+./ManagedObjects/DiagMon/WiFiInfo/BSSID,2234
+
+./ManagedObjects/DiagMon/NetworkInfo,,node
+./ManagedObjects/DiagMon/NetworkInfo/IsRoaming,true
+./ManagedObjects/DiagMon/NetworkInfo/MNC,none
+./ManagedObjects/DiagMon/NetworkInfo/3GSignal,none
+./ManagedObjects/DiagMon/NetworkInfo/1xSignal,none
+./ManagedObjects/DiagMon/NetworkInfo/4GSignal,none
+./ManagedObjects/DiagMon/NetworkInfo/CurrentNetwork,ATT
+./ManagedObjects/DiagMon/NetworkInfo/BaseStationId,D45
+./ManagedObjects/DiagMon/NetworkInfo/CallState,TX
+./ManagedObjects/DiagMon/NetworkInfo/SystemID,1DF
+./ManagedObjects/DiagMon/NetworkInfo/ConnectType,local
+./ManagedObjects/DiagMon/NetworkInfo/ServiceState,active
+./ManagedObjects/DiagMon/NetworkInfo/MCC,none
+./ManagedObjects/DiagMon/NetworkInfo/NetworkID,168.10.10.10
+./ManagedObjects/DiagMon/NetworkInfo/NetworkCountryIso,EEE
+./ManagedObjects/DiagMon/NetworkInfo/SIMState,TX
+
+./ManagedObjects/DiagMon/BluetoothInfo,,node
+./ManagedObjects/DiagMon/BluetoothInfo/Name,Srinivas
+./ManagedObjects/DiagMon/BluetoothInfo/Enabled,true
+./ManagedObjects/DiagMon/BluetoothInfo/HDP,1
+./ManagedObjects/DiagMon/BluetoothInfo/State,2
+./ManagedObjects/DiagMon/BluetoothInfo/A2DPState,3
+./ManagedObjects/DiagMon/BluetoothInfo/HSPState,4
+./ManagedObjects/DiagMon/BluetoothInfo/Discoverable,false
+./ManagedObjects/DiagMon/BluetoothInfo/Discovering,true
+
+./DevInfo/Ext, ,
+
+/DevDetail/Ext, ,
+./DevDetail/Ext/DateTime, ,

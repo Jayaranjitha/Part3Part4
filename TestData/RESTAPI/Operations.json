@@ -1,0 +1,9 @@
+{
+	"actionId": "5001",
+	"needNotification": true,
+	"enabledNbiNotification": true,
+	"routingId": null,
+	"delaySeconds": null,
+	"failOnConnectivityFailure": false,
+	"smsPriority": null
+}

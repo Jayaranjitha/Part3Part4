@@ -1,0 +1,30 @@
+Test Framework
+
+	This test automation project is common framework used by all Nokia products. This project is used to run end to end tests 
+	for individual product as well as all products together. 
+
+Goals Overview
+
+  This project exposes various profiles to run tests against various environments (from VLAB to PROD).
+  
+  * {verify -Pana-vlab} to test analytics product on vlab environment.
+  
+  * {verify -Pana-dev} to test analytics product on dev environment.
+  
+  * {verify -Pana-qa} to test analytics product on qa environment.
+  
+  * {verify -Pana-cert} to test analytics product on cert environment.
+  
+  * {verify -Pana-prod} to test analytics product on prod environment.
+  
+  * {verify -Psmp-vlab} to test SMP product on vlab environment.
+  
+  * {verify -Psmp-dev} to test SMP product on dev environment.
+  
+  * {verify -Psmp-qa} to test SMP product on qa environment.
+  
+  * {verify -Psmp-cert} to test SMP product on cert environment.
+  
+  * {verify -Psmp-prod} to test SMP product on prod environment.
+  
+  * {verify site:site changes:jira-report site:deploy -Pana-dev -Djira.password} will generate test results against ANA DEV and project site with jira report.

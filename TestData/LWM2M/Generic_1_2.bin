@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<UPC xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:x0="http://www.w3.org/2001/XMLSchema">
+<UpdatePackageContainer Id="588147">
+<Description>This describes the update package</Description>
+<Device>
+<Description> This describes the device</Description>
+<Manufacturer>Generic</Manufacturer>
+<Model>LWM2M Generic Device</Model>
+<Transition>
+<OriginalVersion>11.0</OriginalVersion>
+<UpdatedVersion>11.1</UpdatedVersion>
+<UPkg>
+<UpdatePackage Id="588147">
+<Name>RahulGeneric_ver1</Name>
+<Description></Description>
+<Vendor>
+<VendorName>VendorNameGeneric</VendorName>
+<VendorDetails/>
+</Vendor>
+<Parameters>Optional fields used to assist with installation</Parameters>
+<CreationDate>2017-02-03</CreationDate>
+<Size>19584</Size>
+<DownloadTime>PT60.0S</DownloadTime>
+<ReflashTime>PT60.0S</ReflashTime>
+<UpdatePurpose>Security Update</UpdatePurpose>
+</UpdatePackage>
+<UpdateType>Diff</UpdateType>
+</UPkg>
+</Transition>
+</Device>
+</UpdatePackageContainer>
+</UPC>
