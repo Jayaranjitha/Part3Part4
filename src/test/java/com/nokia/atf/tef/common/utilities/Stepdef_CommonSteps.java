@@ -376,7 +376,7 @@ public class Stepdef_CommonSteps extends WEB_Methods {
 	
 	public void lwm2mSimulatorRun() throws Exception {
 
-		closeSimulator("5545");
+		closeSimulator("5549");
 //		lwm2miccid= "000863047618011";
 //	    lwm2mmsisdn="3045335628";
 		String filePath = "\\TestData\\LWM2M\\";
