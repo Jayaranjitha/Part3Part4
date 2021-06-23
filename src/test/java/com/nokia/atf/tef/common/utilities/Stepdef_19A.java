@@ -516,7 +516,7 @@ public class Stepdef_19A extends WEB_Methods {
 		public void testCaseTestRsult(String textValue,String tag) throws Exception {
 		       try {
 		    	   Report_getscreenShot("Before Validation Page"+RandomStringUtils.randomAlphanumeric(8));
-				driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
 				if(driver.findElements(By.xpath("//h6[contains(.,'Test Results')]")).size()<1) {
 					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				}
