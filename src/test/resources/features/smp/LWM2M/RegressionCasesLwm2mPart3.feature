@@ -134,7 +134,7 @@ Scenario: MB_Regression_LWM2M-VZW-Chapter15Cases
      Then user select the "CONTINUE" from status to start the test
      Then user scroll to the right to "Submit" button
      Then user selects the "Submit" button 
-     Then user wait for "1" minutes
+     Then user wait for "2" minutes
 	 Then user validates the "15.00 PSM Timer" test results for "VZ_TC_LWM2MOTADM" test case 
      Then user select the "_15_01_Active_Timer" folders for test case "15.01 Active Timer" 
      Then user selects the "Play" button
